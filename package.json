@@ -1,0 +1,47 @@
+{
+  "name": "pfun",
+  "version": "0.4.0",
+  "description": "A tool to create plugins or middlewares for different Javascript tools, frameworks, servers.",
+  "keywords": [
+    "plugin",
+    "hemera",
+    "seneca"
+  ],
+  "author": {
+    "name": "Adam Bereczk",
+    "email": "adam.bereczk@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/bersilius/pfun/issues"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/bersilius/pfun/blob/master/LICENSE"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/bersilius/pfun.git"
+  },
+  "main": "lib/index",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "chai": "^3.5.0",
+    "co-mocha": "^1.2.0",
+    "coveralls": "^2.11.15",
+    "cross-env": "^2.x.x",
+    "eslint": "^4.10.0",
+    "istanbul": "1.0.0-alpha.2",
+    "mocha": "^4.0.1",
+    "mocha-lcov-reporter": "^1.2.0",
+    "pre-push": "^0.1.1"
+  },
+  "scripts": {
+    "lint": "eslint lib/**.js",
+    "test": "cross-env NODE_ENV=test mocha --recursive 'lib/**/*.spec.js'",
+    "test:watch": "npm test -- --watch",
+    "coverage": "NODE_ENV=test istanbul cover _mocha -- --require co-mocha --timeout 10000 'lib/**/*.spec.js'"
+  }
+}
