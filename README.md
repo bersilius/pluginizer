@@ -47,20 +47,18 @@ There are two typical way to create a module that contains function(s) which can
 
 Note: If you use curry or a factory it is also possible using the 'curry' option described later.
 
-### type: 'singleFn'
+### Type single function
 Export a simple function like:
 ```javascript
 module.exports = (msg, cb) => { ... }
 ```
 
-- Use 'singleFn' type.
 - Set the 'pattern' to route messages to this handler.
 - Set the plugin name which will be registered internally in the toolkit.
 
 Options will look like this:
 ```javascript
 const options = {
-    type: 'singleFn',
     pattern: {
         topic: 'someTopic',
         cmd: 'someCmd'
@@ -71,8 +69,9 @@ const options = {
 
 Your microservice will listen for the pattern and execute the wrapped business logic implementation as handler.
 
-### type: 'objectOfFns'
+### Type object of functions
 Note: in this case the exported object property keys will be mapped as 'cmd' in the pattern automatically. In the example below add, subtract, ... will be mapped as cmd(s).
+
 Export an object of functions like this:
 ```javascript
 module.exports = {
@@ -83,14 +82,12 @@ module.exports = {
 }
 ```
 
-- Use 'objectOfFns' type.
 - Set the 'pattern' to route messages to this handler.
 - Set the plugin name which will be registered internally in the toolkit.
 
 Options will look like this:
 ```javascript
 const options = {
-    type: 'objectOfFns',
     pattern: {
         topic: 'calculator'
     },
@@ -123,7 +120,6 @@ Example:
 
 ```javascript
 const options = {
-    type: 'singleFn', // or 'objectOfFns'
     pattern: {
         topic: 'topicName',
         cmd: 'someCmd'
