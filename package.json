@@ -43,5 +43,8 @@
     "test": "cross-env NODE_ENV=test mocha --recursive 'lib/**/*.spec.js'",
     "test:watch": "npm test -- --watch",
     "coverage": "NODE_ENV=test istanbul cover _mocha -- --require co-mocha --timeout 10000 'lib/**/*.spec.js'"
+  },
+  "engines": {
+    "node": "8.9.4"
   }
 }
