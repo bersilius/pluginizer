@@ -1,5 +1,9 @@
 # pfun
 
+[![npm version][npm-badge]][npm-url]
+[![Build Status][travis-badge]][travis-url]
+[![Coveralls][BadgeCoveralls]][Coveralls]
+
 A tool to create plugins or middlewares for different Javascript tools, frameworks, servers.
 
 This tools helps to keep the implementation free of Hemera or Seneca keywords, which may be problematic in case of migration or running the code in multiple containers with different toolkits.
@@ -140,3 +144,10 @@ If you are interested please also check the repositories listed below which can 
 
 - [wfun](https://github.com/bersilius/wfun) - Wrap your plain JS functions into different functions, based on common patterns for plugins and middlewares.
 - [npac](https://github.com/tombenke/npac) - A lightweight Ports and Adapters Container for applications running on Node.js platform.
+
+[npm-badge]: https://badge.fury.io/js/pfun.svg
+[npm-url]: https://badge.fury.io/js/pfun
+[travis-badge]: https://api.travis-ci.org/bersilius/pfun.svg
+[travis-url]: https://travis-ci.org/bersilius/pfun
+[Coveralls]: https://coveralls.io/github/bersilius/pfun?branch=master
+[BadgeCoveralls]: https://coveralls.io/repos/github/bersilius/pfun/badge.svg?branch=master
