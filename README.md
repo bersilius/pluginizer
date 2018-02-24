@@ -1,4 +1,4 @@
-# pfun
+# pluginizer
 
 [![npm version][npm-badge]][npm-url]
 [![Build Status][travis-badge]][travis-url]
@@ -12,7 +12,7 @@ This tools helps to keep the implementation free of Hemera or Seneca keywords, w
 
 Run the install command:
 
-    npm install --save pfun
+    npm install --save pluginizer
 
 ## Usage
 
@@ -27,7 +27,7 @@ module.exports = myFunction
 
 Create Hemera plugin:
 ```javascript
-const pluginizer = require('pfun')
+const pluginizer = require('pluginizer')
 
 const pluginizedLogic = pluginizer.createHemeraPlugin(businessLogic, options)
 
@@ -37,7 +37,7 @@ const pluginizedLogic = pluginizer.createHemeraPlugin(businessLogic, options)
 
 Create Seneca plugin:
 ```javascript
-const pluginizer = require('pfun')
+const pluginizer = require('pluginizer')
 
 const pluginizedLogic = pluginizer.createHemeraPlugin(businessLogic, options)
 
@@ -145,9 +145,9 @@ If you are interested please also check the repositories listed below which can 
 - [wfun](https://github.com/bersilius/wfun) - Wrap your plain JS functions into different functions, based on common patterns for plugins and middlewares.
 - [npac](https://github.com/tombenke/npac) - A lightweight Ports and Adapters Container for applications running on Node.js platform.
 
-[npm-badge]: https://badge.fury.io/js/pfun.svg
-[npm-url]: https://badge.fury.io/js/pfun
-[travis-badge]: https://api.travis-ci.org/bersilius/pfun.svg
-[travis-url]: https://travis-ci.org/bersilius/pfun
-[Coveralls]: https://coveralls.io/github/bersilius/pfun?branch=master
-[BadgeCoveralls]: https://coveralls.io/repos/github/bersilius/pfun/badge.svg?branch=master
+[npm-badge]: https://badge.fury.io/js/pluginizer.svg
+[npm-url]: https://badge.fury.io/js/pluginizer
+[travis-badge]: https://api.travis-ci.org/bersilius/pluginizer.svg
+[travis-url]: https://travis-ci.org/bersilius/pluginizer
+[Coveralls]: https://coveralls.io/github/bersilius/pluginizer?branch=master
+[BadgeCoveralls]: https://coveralls.io/repos/github/bersilius/pluginizer/badge.svg?branch=master
