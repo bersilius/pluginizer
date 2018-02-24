@@ -25,20 +25,20 @@ Create Hemera plugin:
 ```javascript
 const pluginizer = require('pfun')
 
-const plugin = pluginizer.createHemeraPlugin(businessLogic, options)
+const pluginizedLogic = pluginizer.createHemeraPlugin(businessLogic, options)
 
 // next step is loading the plugin with the Hemera instance as usual.
-// hemera.use(plugin)
+// hemera.use(hp(pluginizedLogic.plugin, pluginizedLogic.options)
 ```
 
 Create Seneca plugin:
 ```javascript
 const pluginizer = require('pfun')
 
-const plugin = pluginizer.createHemeraPlugin(businessLogic, options)
+const pluginizedLogic = pluginizer.createHemeraPlugin(businessLogic, options)
 
 // next step is loading the plugin with the Seneca instance as usual.
-// seneca.use(plugin)
+// seneca.use(pluginizedLogic)
 ```
 
 ## Options
